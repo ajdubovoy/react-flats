@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import flats from '../../data/flats';
 import FlatList from './flat_list';
+import GMap from './g_map';
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +26,9 @@ class App extends Component {
         <FlatList
           flats={this.state.flats}
           handleUpdate={this.handleUpdate}
+          selectedFlat={this.state.selectedFlat}
+        />
+        <GMap
           selectedFlat={this.state.selectedFlat}
         />
       </div>
