@@ -13,10 +13,9 @@ class App extends Component {
     };
   }
 
-  handleUpdate(event) {
-    const index = event.target.index;
+  handleUpdate = (index) => {
     this.setState(
-      { selectedFlat: flats.index }
+      { selectedFlat: flats[index] }
     );
   }
 
